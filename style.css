@@ -1,0 +1,58 @@
+#content {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+}
+
+#inputt {
+    padding: 10px;
+    width: 40%;
+    font-style: italic;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    height: 3rem;
+    text-align: left;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+#inputt:focus {
+    border-color: rgb(75, 72, 72);
+    box-shadow: 0 0 10px rgba(167, 154, 159, 0.5);
+    outline: none;
+}
+
+#btn {
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: rgb(139, 76, 76);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s, transform 0.2s;
+}
+
+#btn:hover {
+    background-color: #e0557a;
+    transform: scale(1.05);
+}
+
+#result {
+    font-size: 24px;
+    color: rgb(72, 107, 168);
+    margin-top: 30px;
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+#result.show {
+    opacity: 1;
+    transform: translateY(-10px);
+}
